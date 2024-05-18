@@ -17,6 +17,7 @@
             <li><a href="mission-statement.html">Mission Statement<span></span></a></li>
             <li><a href="crypto-view.html">CryptoCurrency View<span></span></a></li>
             <li><a href="trading-view.html">Fortune 500<span></span></a></li>
+            <li><a href="tutorial.html">How to Invest<span></span></a></li>
 
         </ul>
     </nav>
@@ -59,20 +60,24 @@
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-chartWidget-container" style="height:100%;width:70%">
         <div class="tradingview-chartWidget-container__widget" style="height: 100%;width:70%"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-{
-  "autosize": true,
+    </div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "985",
+  "height": "610",
   "symbol": "NASDAQ:AAPL",
   "interval": "D",
   "timezone": "Etc/UTC",
   "theme": "dark",
   "style": "1",
   "locale": "en",
-  "enable_publishing": true,
+  "backgroundColor": "rgba(0, 0, 0, 1)",
+  "gridColor": "rgba(0, 0, 0, 0.06)",
   "allow_symbol_change": true,
   "calendar": false,
   "support_host": "https://www.tradingview.com"
-}</script>
+}
+    </script>
     </div>
     <!-- TradingView Widget END -->
     <!-- TradingView Widget BEGIN -->
@@ -156,8 +161,8 @@
     </div>
     <!-- TradingView Widget END -->
     <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-signalWidget-container">
+        <div class="tradingview-signalWidget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
 {
   "interval": "1m",
@@ -173,8 +178,8 @@
     </div>
     <!-- TradingView Widget END -->
     <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-newsWidget-container">
+        <div class="tradingview-newsWidget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
 {
   "feedMode": "all_symbols",
@@ -188,8 +193,8 @@
     </div>
     <!-- TradingView Widget END -->
     <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-econWidget-container">
+        <div class="tradingview-econWidget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
 {
   "colorTheme": "dark",

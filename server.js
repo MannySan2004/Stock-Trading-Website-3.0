@@ -30,6 +30,9 @@ http.createServer(function (req, res) {
         case './mission-statement.html':
             filePath = './mission-statement.html';
             break;
+        case './Tutorial.html':
+            filePath = './Tutorial.html';
+            break;
         case './chart-view.html': // Add new case for 'chart-view.html'
             filePath = './homepage.html';
             break;
