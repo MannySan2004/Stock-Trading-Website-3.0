@@ -1,6 +1,16 @@
 ﻿body {
     background-color: black;
-    color: white
+    color: white;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    flex-direction: column; */
+    /* height: 100vh; */
+}
+
+main {
+    /* display: flex; */
+    flex: 1;
 }
 
 h1 {
@@ -22,10 +32,15 @@ h1 {
 
 /* This is the main navbar container */
 .content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    /* Full width of the parent element */
+    flex: 1;
+    padding: 20px;
+    width: 60%;
+    height: 100%;
+    /* margin-right: 400px; */
+}
+
+.sidebar {
+
 }
 
 .tradingview-chartWidget-container {
@@ -117,7 +132,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 .footer-container {
@@ -143,3 +158,42 @@ footer {
     text-decoration: none;
     font-size: 16px;
 }
+
+#sidebar {
+    width: 450px;
+    padding: 20px;
+    background-color: black;
+    /* box-shadow: -2px 0 5px rgba(0,0,0,0.1); */
+    box-sizing: border-box;
+    overflow-y: auto; /* Enables scrolling if the content is taller than the viewport */
+    position: sticky;
+    top: 10px; /* distance from the top of the viewport */
+    align-self: flex-start;
+}
+
+/* aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+  }
+  
+  aside > main {
+    margin: 0.5rem;
+  } */
+
+  .parent {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .child {
+    display: inline-block;
+    /* border: 1px solid red; */
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
