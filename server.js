@@ -30,11 +30,14 @@ http.createServer(function (req, res) {
         case './mission-statement.html':
             filePath = './mission-statement.html';
             break;
-        case './Tutorial.html':
-            filePath = './Tutorial.html';
+        case './tutorial.html':
+            filePath = './tutorial.html';
             break;
-        case './chart-view.html': // Add new case for 'chart-view.html'
+        case './homepage.html': // Add new case for 'chart-view.html'
             filePath = './homepage.html';
+            break;
+        case './error404.html': // Add new case for 'chart-view.html'
+            filePath = './error404.html';
             break;
         default:
             break; // No change, serve as requested
