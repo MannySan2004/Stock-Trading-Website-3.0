@@ -1,58 +1,63 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en-us">
+
 <head>
     <meta charset="utf-8" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
+    <title>Chart View</title>
     <link href="Style1.css" rel="stylesheet" />
 </head>
+
 <body>
+  <header>
     <h1> International Bits Partnered with Sound Credit Union</h1>
     <nav class="navbar">
-        <ul>
-            <li><a href="chart-view.html">Chart View<span></span></a></li>
-            <li><a href="crypto-view.html">CryptoCurrency View<span></span></a></li>
-            <li><a href="trading-view.html">Fortune 500<span></span></a></li>
-            <li><a href="tutorial.html">How to Invest<span></span></a></li>
+      <ul>
+        <li><a href="chart-view.html">Chart View<span></span></a></li>
+        <li><a href="crypto-view.html">CryptoCurrency View<span></span></a></li>
+        <li><a href="trading-view.html">Fortune 500<span></span></a></li>
+        <li><a href="tutorial.html">How to Invest<span></span></a></li>
 
-        </ul>
+      </ul>
     </nav>
-    <!-- TradingView Widget BEGIN -->
+      <!-- TradingView Widget END -->
+
     <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-  "symbols": [
-    {
-      "proName": "FOREXCOM:SPXUSD",
-      "title": "S&P 500 Index"
-    },
-    {
-      "proName": "FOREXCOM:NSXUSD",
-      "title": "US 100 Cash CFD"
-    },
-    {
-      "proName": "FX_IDC:EURUSD",
-      "title": "EUR to USD"
-    },
-    {
-      "proName": "BITSTAMP:BTCUSD",
-      "title": "Bitcoin"
-    },
-    {
-      "proName": "BITSTAMP:ETHUSD",
-      "title": "Ethereum"
-    }
-  ],
-  "showSymbolLogo": true,
-  "isTransparent": false,
-  "displayMode": "regular",
-  "colorTheme": "dark",
-  "locale": "en"
-}
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async>
+          {
+            "symbols": [
+              {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500 Index"
+              },
+              {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "US 100 Cash CFD"
+              },
+              {
+                "proName": "FX_IDC:EURUSD",
+                "title": "EUR to USD"
+              },
+              {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+              },
+              {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "Ethereum"
+              }
+            ],
+              "showSymbolLogo": true,
+                "isTransparent": false,
+                  "displayMode": "regular",
+                    "colorTheme": "dark",
+                      "locale": "en"
+          }
         </script>
     </div>
     <!-- TradingView Widget END -->
@@ -62,7 +67,7 @@
     </div>
     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
-  "width": "1300",
+  "width": "985",
   "height": "610",
   "symbol": "NASDAQ:AAPL",
   "interval": "D",
@@ -84,7 +89,7 @@
         <div class="tradingview-marketWatchWidget-container__widget" style="height: 100%; width: 70%"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
 {
-  "width": "1300",
+  "width": "100%",
   "height": 550,
   "defaultColumn": "valuation",
   "defaultScreen": "most_capitalized",
@@ -124,7 +129,7 @@
     ]
   ],
   "chartOnly": false,
-  "width": "1300",
+  "width": "100%",
   "height": "100%",
   "locale": "en",
   "colorTheme": "dark",
@@ -159,16 +164,7 @@
 }</script>
     </div>
     <!-- TradingView Widget END -->
-    <!--These are the ones you need to fix-->
     <!-- TradingView Widget BEGIN -->
-    <style>
-        .tradingview-signalWidget-container {
-            position: absolute; /* Position it relative to the nearest positioned ancestor */
-            right: 0; /* Align it to the right edge of the parent container */
-            top: 255px; /* Set the top position to avoid overlapping with other elements, adjust as necessary */
-            width: 550px; /* Set the width of the widget */
-        }
-    </style>
     <div class="tradingview-signalWidget-container">
         <div class="tradingview-signalWidget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
@@ -177,7 +173,7 @@
   "width": 425,
   "isTransparent": false,
   "height": 450,
-  "symbol": "NASDAQ:NVDA",
+  "symbol": "NASDAQ:CELH",
   "showIntervalTabs": true,
   "displayMode": "single",
   "locale": "en",
@@ -185,16 +181,6 @@
 }</script>
     </div>
     <!-- TradingView Widget END -->
-
-    <style>
-        .tradingview-newsWidget-container {
-            position: absolute; /* Position it relative to the nearest positioned ancestor */
-            right: 0; /* Align it to the right edge of the parent container */
-            top: 710px; /* Set the top position to avoid overlapping with other elements, adjust as necessary */
-            width: 550px; /* Set the width of the widget */
-        }
-    </style>
-
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-newsWidget-container">
         <div class="tradingview-newsWidget-container__widget"></div>
@@ -203,7 +189,7 @@
   "feedMode": "all_symbols",
   "isTransparent": false,
   "displayMode": "regular",
-  "width": 425,
+  "width": 400,
   "height": 550,
   "colorTheme": "dark",
   "locale": "en"
@@ -211,23 +197,14 @@
     </div>
     <!-- TradingView Widget END -->
     <!-- TradingView Widget BEGIN -->
-
-    <style>
-        .tradingview-econWidget-container {
-            position: absolute; /* Position it relative to the nearest positioned ancestor */
-            right: 0; /* Align it to the right edge of the parent container */
-            top: 1275px; /* Set the top position to avoid overlapping with other elements, adjust as necessary */
-            width: 550px; /* Set the width of the widget */
-        }
-    </style>
     <div class="tradingview-econWidget-container">
         <div class="tradingview-econWidget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
 {
   "colorTheme": "dark",
   "isTransparent": false,
-  "width": "425",
-  "height": "300",
+  "width": "400",
+  "height": "550",
   "locale": "en",
   "importanceFilter": "-1,0,1"
 }</script>
@@ -238,46 +215,17 @@
             <ul class="footer-links">
                 <li><a href="mission-statement.html">Mission Statement</a></li>
 
-            </ul>
-            <p>
-                &copy; 2024 Stock and Crypto Market Guide -
-                Brought to you by: International Bits and Sound Credit Union -
-                Powered by TradingView
-            </p>
-        </div>
-    </footer>
-    <style>
-        footer {
-            background: black;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
+      </ul>
+      <p>
+        &copy; 2024 Stock and Crypto Market Guide -
+        Brought to you by: International Bits and Sound Credit Union -
+        Powered by TradingView
+      </p>
+    </div>
+  </footer>
+  <style>
 
-        .footer-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .footer-links {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 10px;
-        }
-
-            .footer-links li {
-                margin: 0 10px;
-            }
-
-            .footer-links a {
-                color: white;
-                text-decoration: none;
-                font-size: 16px;
-            }
-    </style>
+  </style>
 </body>
+
 </html>
